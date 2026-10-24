@@ -1,0 +1,7 @@
+1) What are some other functions that would be useful as an input to fold?
+Any simple calculation a calculator uses would work for a fold, such as subtraction or division.
+2) How could you use iterators and templates to further abstract the fold function?
+I didn't notice we didn't need template-, it already has templates so oops-. Although for adding in iterators would need to change the i to start and have it dereference each time it wants to use that value.
+3) The type of fold I defined is a rightwards fold, since the parenthesis end up nesting to the right. Consider how you would implement a leftwards fold. Would this function produce different results?
+I think starting from the end would be helpful since it would start in reverse order, leaving the parentheses to nest to the left. -> (4+(3+(2+1))). So, using iterators and doing it in reverse order would have
+helped out.
